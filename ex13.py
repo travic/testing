@@ -1,0 +1,13 @@
+from sys import argv
+
+script, first, second, third = argv
+
+print "The script is called:", script
+print "Your first variable is:", first
+print "Your second variable is:", second
+print "Your third variable is:", third
+
+
+#to run this script we need to unpack it first.
+#To unpack it type python ex13.py first,2nd,3rd to fill in the variables. The words first,2nd,3rd can be changed to anything!
+#MUST HAVE THREE VARIABLES TO RUN
