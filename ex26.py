@@ -1,3 +1,5 @@
+import ex25
+
 def break_words(stuff):
     """This function will break up words for us."""
     words = stuff.split(' ')
@@ -74,22 +76,20 @@ print "We can also do that this way:"
 print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
 
 
-sentence = "All good\tthings come to those who wait."
+sentence = "All good things come to those who wait."
 
 
+words = ex25.break_words(sentence)
+sorted_words = ex25.sort_words(words)
 
-#The following lines are from what I gather the required lines of text to properly run this program. I am assuming there is a way to actually link ex25.py with this and have those commands run it. But as of right now I am not to sure how to do it. So in the lesson 26 he said in the q&a section that I could remove the reference to lesson 25 and I am assuming its the line of code beneath this one. If I am wrong I hope someone tells me so I can go back and fix it.
-#words = ex25.break_words(sentence)
-#sorted_words = ex25.sort_words(words)
+print_first_word(words)
+print_last_word(words)
+print_first_word(sorted_words)
+print_last_word(sorted_words)
+sorted_words = ex25.sort_sentence(sentence)
+print sorted_words
 
-#print_first_word(words)
-#print_last_word(words)
-#print_first_word(sorted_words)
-#print_last_word(sorted_words)
-#sorted_words = ex25.sort_sentence(sentence)
-#print sorted_words
+print_first_and_last(sentence)
 
-#print_first_and_last(sentence)
-
-#print_first_a_last_sorted(senence)
-
+print_first_and_last_sorted(sentence)
+# I figured it out and it took me like 40 minutes
